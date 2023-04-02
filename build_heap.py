@@ -35,7 +35,6 @@ def main():
                 with open(f"tests/{name}", "r", encoding="utf-8") as f:
                     a = int(f.readline())
                     d = list(map(int, f.readline().split()))
-                    assert len(d) == b
                 break
             except FileNotFoundError:
                 print("File not found, please enter a valid file name")
